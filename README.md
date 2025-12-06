@@ -2,8 +2,6 @@
 
 A full-stack blog CMS application with Django REST API backend and React.js frontend.
 
-
-
 ## ✨ Features
 - ✅ **Complete CRUD Operations** - Create, Read, Update, Delete blog posts
 - ✅ **Search Functionality** - Search posts by title, content, or tags
