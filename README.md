@@ -2,73 +2,49 @@
 
 A full-stack blog CMS application with Django REST API backend and React.js frontend.
 
-## 🚀 Live Demo
-- **Frontend:** [Live URL] (Vercel/Netlify)
-- **Backend API:** [API URL] (Render/Railway)
-- **Admin Panel:** [Admin URL]
-- **API Documentation:** [Postman/Swagger]
 
-## 🎯 Project Overview
-This project is a complete Blog Management System that allows users to create, read, update, and delete blog posts. It includes search, filter functionalities and a responsive UI.
-
-## 🏗️ Project Structure
-
-### **Frontend** (`/frontend`)
-- **Technology:** React.js 18
-- **State Management:** React Hooks
-- **Styling:** Bootstrap 5 + Custom CSS
-- **Routing:** React Router DOM v6
-- **API Calls:** Axios
-
-### **Backend** (`/backend`)
-- **Framework:** Django 4.2 + Django REST Framework
-- **Database:** SQLite (Development) / PostgreSQL (Production ready)
-- **Authentication:** Ready to implement
-- **API Design:** RESTful architecture
 
 ## ✨ Features
-
-### ✅ Implemented
-- **CRUD Operations:** Create, Read, Update, Delete blog posts
-- **Search:** Search posts by title, content, or tags
-- **Filter:** Filter by category, author, or status
-- **Responsive Design:** Mobile-first approach
-- **REST API:** Clean API endpoints
-- **Form Validation:** Client-side validation
-
-### 🔄 Planned
-- User Authentication & Authorization
-- Rich Text Editor
-- Image Upload
-- Comment System
-- Pagination
-- Social Sharing
-
-## 📸 Screenshots
-
-| Page | Screenshot |
-|------|------------|
-| **Home Page** | ![Home](screenshots/home.png) |
-| **Create Post** | ![Create](screenshots/create.png) |
-| **Post List** | ![List](screenshots/list.png) |
-| **Admin Panel** | ![Admin](screenshots/admin.png) |
+- ✅ **Complete CRUD Operations** - Create, Read, Update, Delete blog posts
+- ✅ **Search Functionality** - Search posts by title, content, or tags
+- ✅ **Filtering** - Filter by category, author, or status
+- ✅ **Responsive Design** - Works on mobile, tablet, and desktop
+- ✅ **RESTful API** - Clean API endpoints following REST principles
+- ✅ **User Authentication** (Ready to implement)
+- ✅ **Rich Text Editor** (Can be integrated)
 
 ## 🛠️ Technology Stack
 
 ### **Frontend**
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- React.js 18
+- React Router DOM
+- Axios for API calls
+- Bootstrap 5 for styling
+- React Hooks
 
 ### **Backend**
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=google-cloud&logoColor=white)
+- Django 4.2
+- Django REST Framework
+- SQLite (Development)
+- CORS headers
 
-## 🏁 Getting Started
+### **Tools**
+- Git & GitHub
+- Postman (API testing)
+- VS Code
+
+## 📁 Project Structure
+
+jeevan-tech-blog/
+├── backend/ # Django REST API
+├── frontend/ # React.js Application
+├── docs/ # Documentation
+└── README.md # This file
+
+
+
+
+## 🏗️ Installation & Setup
 
 ### **Prerequisites**
 - Python 3.8+
@@ -84,22 +60,114 @@ cd jeevan-tech-blog/backend
 # Create virtual environment
 python -m venv venv
 
-# Activate (Windows)
+# Activate virtual environment
+# Windows:
 venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Setup environment
+# Set up environment variables
 cp .env.example .env
-# Edit .env with your settings
+# Edit .env file with your settings
 
 # Run migrations
 python manage.py migrate
 
-# Create admin user
+# Create superuser
 python manage.py createsuperuser
 
-# Run server
+# Run development server
 python manage.py runserver
+
+
+cd ../frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+
+
+
+
+Method	Endpoint	Description
+GET	/api/posts/	Get all posts
+POST	/api/posts/	Create new post
+GET	/api/posts/{id}/	Get single post
+PUT	/api/posts/{id}/	Update post
+DELETE	/api/posts/{id}/	Delete post
+GET	/api/posts/?search=query	Search posts
+GET	/api/posts/?category=value	Filter by category
+
+
+Features Implemented
+Completed
+Create blog posts
+
+Read/View all posts
+
+Update existing posts
+
+Delete posts
+
+Search functionality
+
+Filter by category
+
+Responsive UI
+
+API documentation
+
+Future Enhancements
+
+
+User authentication
+
+Rich text editor
+
+Image upload
+
+Comment system
+
+Like/Share features
+
+Pagination
+
+Deployment
+
+
+ Testing the Application
+Create a Post:
+
+Navigate to /create
+
+Fill the form and submit
+
+Verify post appears on homepage
+
+Search Posts:
+
+Use search bar to find posts
+
+Test with different keywords
+
+Filter Posts:
+
+Filter by category (Technology, Lifestyle, etc.)
+
+Filter by status (Draft, Published)
+
+Admin Panel:
+
+Visit /admin
+
+Login with superuser credentials
+
+Manage all posts
+
+
 
